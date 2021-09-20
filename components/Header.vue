@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="dark" class="w-100">
+  <b-navbar toggleable="md" type="light" variant="light" class="w-100">
     <b-navbar-brand to="/">
     
       <span class="font-weight-bold">Owen Kempton</span>

@@ -1,49 +1,93 @@
 <!-- Main page block -->
 <template>
-    <div >
-  <b-jumbotron class= container>
-    <template #header>A website... Work in progress!</template>
+    <div>
+        <div class = container>
+        
+            <div class = title>
+                <vue-typed-js :loop="true" :cursorChar="'_'" :startDelay="1000" :strings="['A website', 'An opportunity', 'An inspiration']">
+                <h1><span class="typing"></span>... by me</h1>
+                </vue-typed-js>
+            </div>
 
-    <template #lead>
-      Coming soon
-    </template>
+            <div class = followUp>
+                Coming soon
+            </div>
 
-    <hr class="my-4">
-  </b-jumbotron>
-</div>
+        
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
 </template>
 
+
+
 <script>
+import Vue from 'vue'
+import VueTypedJs from 'vue-typed-js'
+Vue.use(VueTypedJs)
 export default {
-    name: 'Navbar'
-}
+  created() {
+    console.log('Component has been created!');
+    loopItems()
+    function loopItems(){
+        //Loop though items on the page
+        let Items = 'hello'
+        return Items
+    }
+  }
+};
+
+
+
 </script>
 <style scoped>
-.navbar{
-    background: #f44336;
-    padding: 1rem;
-    font-size: 1.5rem;
-    border-bottom: 1px solid white;
-
-
-}
 .container {
-    height: 90vh;
-    overflow: auto;
+    /* This is the css for the big box */
+    height: 60vh;
+    margin-top: 30vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 5vh;
+    
 }
-.navLink{
-text-align: center;
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vh;
 }
-a{
-    text-decoration: none;
-    padding: 1rem;
-    color:#fff;
-    text-align: center;
+
+.followUp {
+    display: flex;
+    justify-content: center;
 }
-@media only screen and (max-width: 600px) {
-    .navLink{
-        display: flex;
-        flex-direction: column;
-    }
+
+* {
+  font-family: Montserrat, sans-serif;
 }
+
+.cursor {
+  display: inline-block;
+  height: 40px;
+  width: 2px;
+  background: #aaa;
+  vertical-align: middle;
+  animation: 1s blink linear infinite;
+}
+@keyframes blink {
+  0%,49% {
+    opacity: 0;
+  }
+  50%,100% {
+    opacity: 1;
+  }
+}
+
 </style>
