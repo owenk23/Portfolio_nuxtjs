@@ -1,8 +1,7 @@
 <template>
-  <div toggleable="lg" type="dark" variant="dark" class="w-100">
-    <span class="font-weight-bold">Made with ❤️ by Owen</span>
+  <div class="d-flex p-2 bd-highlight">
+    Made with ❤️ by Owen
   </div>
-  
 </template>
 
 <script>
