@@ -11,6 +11,9 @@
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },
+  "PrintCarousel": {
+    "description": "Auto imported from components/PrintCarousel.vue"
+  },
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   }

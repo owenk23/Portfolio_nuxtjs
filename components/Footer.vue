@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex p-2 bd-highlight">
+  <div class="footer">
     Made with ❤️ by Owen
   </div>
 </template>
@@ -9,3 +9,9 @@ export default {
   
 };
 </script>
+<style scoped>
+.footer {
+    background-color: black;
+    color: white;
+}
+</style>

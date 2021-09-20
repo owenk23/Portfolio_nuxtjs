@@ -10,4 +10,5 @@ You can directly use them in pages and other components without the need to impo
 - `<Header>` | `<header>` (components/Header.vue)
 - `<MainContent>` | `<main-content>` (components/MainContent.vue)
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
+- `<PrintCarousel>` | `<print-carousel>` (components/PrintCarousel.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
