@@ -2,7 +2,7 @@
 <template>
     <div>
   <b-jumbotron>
-    <template #header>A website... Work in prgress!</template>
+    <template #header>A website... Work in progress!</template>
 
     <template #lead>
       Coming soon
