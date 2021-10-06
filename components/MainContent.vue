@@ -3,14 +3,15 @@
     <div>
         <div class = container>
         
-            <div class = title>
-                <vue-typed-js :loop="true" :cursorChar="'_'" :startDelay="1000" :strings="['A website', 'An opportunity', 'An inspiration']">
-                <h1><span class="typing"></span>... by me</h1>
-                </vue-typed-js>
+            <div class = profilePic>
+              
+               <img src="https://avatars.githubusercontent.com/u/45485947?v=4" alt="Owen's Proifile picture" class = ppicture> 
+
             </div>
 
             <div class = followUp>
-                Coming soon
+                Hi, I'm Owen.
+                I'm a 3rd year student and part time tinkerer. I am currently studying Computer science at the University of Portsmouth.
             </div>
 
         
@@ -48,7 +49,7 @@ export default {
 
 
 </script>
-<style scoped>
+<style>
 .container {
     /* This is the css for the big box */
     height: 60vh;
@@ -56,6 +57,18 @@ export default {
     background-color: rgba(0, 0, 0, 0.1);
     padding-top: 5vh;
     
+}
+
+.ppicture{
+  border-radius: 50%;
+
+}
+
+
+.profilePic{
+  display: flex;
+  justify-content: center;
+  margin: -20vh
 }
 
 .title {
@@ -67,6 +80,8 @@ export default {
 .followUp {
     display: flex;
     justify-content: center;
+    margin-top: 25vh;
+    font-size: 40px;
 }
 
 * {
